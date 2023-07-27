@@ -1,0 +1,320 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+   }
+
+
+body
+{
+    background-image: url(churchkrb.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    background-attachment: fixed;
+    text-align: center;
+        
+   }
+
+   .menu-bar
+   {
+    background: green;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: left;
+    overflow: hidden;
+   
+
+   }
+   .menu-bar ul
+   {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-family:'Lucida Sans';
+ 
+   }
+   .menu-bar ul li
+   {
+    width: 100px;
+    margin: 15px;
+    padding:15px;
+   }
+   .menu-bar ul li a
+   {
+    text-decoration: none;
+    color: white;
+   }
+
+   .active, .menu-bar ul li:hover 
+   {
+    background-color: greenyellow;
+    border-radius: 3px;
+
+   }
+   .menu-bar .fa
+  {
+    margin-right:8px;
+
+   }
+
+   .sub-menu-1
+   {
+    display: none;
+   }
+
+   .menu-bar ul li:hover .sub-menu-1
+   {
+    display: block;
+    position: absolute;
+    background:green ;
+    margin-top: 15px;
+    margin-left: -15px;
+   }
+
+   .menu-bar ul li:hover .sub-menu-1 ul
+   {
+    display: block;
+    margin: 10px;
+   }
+   .menu-bar ul li:hover .sub-menu-1 ul li
+   {
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+   }
+   .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+   {
+    border-bottom: none;
+   }
+   .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+   {
+    color: #b2f00b;
+   }
+
+
+
+/*styling of the footer*/
+
+.footer{
+  margin-top: 150px;
+  width:100%;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+  bottom: 0;
+  height: 55px;
+  overflow-x:auto;
+  box-sizing: border-box;
+  
+}
+.footer div {
+  text-align: center;
+}
+.col-2, .col-4{
+  flex-grow: 2;
+  font-size: 18px;
+
+}
+.col-4 p:hover{
+  color: #b2f00b;
+  transition: 0.2s;
+}
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing:1px;
+    
+}
+.footer div h3:hover{
+  color: #ff7200;
+  }
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.col-1 a:hover{
+  color: #b2f00b;
+  padding-left: 8px;
+  transition:0.2s ease;
+}
+.col-3 a{
+    display:block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.col-3 a:hover{
+  color: #b2f00b;
+  padding-left: 8px;
+  transition:0.2s ease;
+}
+form input{
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: black;
+  border: 2px solid #fff;
+  color: rgb(229, 237, 237);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*paragraph Styling*/
+.content{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: rgb(10, 5, 5);
+  position: relative;
+}
+.content .para{
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+.content h1{
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+.content span{
+  color: #b2f00b;
+  font-size: 50px;
+}
+
+
+
+/*styling of the signin/signup form*/
+.form{
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(to top, rgb(23, 35, 22)50%,rgb(30, 40, 29)50%);
+  position: absolute;
+  top: -20px;
+  left: 1100px;
+  border-radius: 10px;
+  padding: 25px;
+  bottom: 10px;
+
+
+}
+.form h2{
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: rgb(243, 237, 237);
+  border-radius: 10px;
+  margin:2px;
+  padding: 8px;
+}
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom :1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #cbc7c7;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans;
+}
+.form input:focus{
+outline: none;
+
+}
+::placeholder{
+  color: whitesmoke;
+  font-family: Arial;
+}
+.btnn{
+  width: 240px;
+  height: 40px;
+  background-color: orange;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+  }
+  .btnn:hover{
+    background: #f1f1f1;
+    color: orange;
+  }
+  .btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold; 
+  }
+.form.link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form.link a{
+  text-decoration: none;
+  color: orange;
+}
+.link{
+  color: #f1f1f1;
+  text-align: center;
+  padding-top: 20px;
+}
+.link a{
+  text-decoration: none;
+  color: #ff7200;
+}
+.LWI{
+padding-top: 15px;
+padding-bottom: 10px;
+text-align: center;
+color: #f1f1f1;
+}
+.header1{
+  color: orange;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+ 
+
+
+
+
+
+
+
